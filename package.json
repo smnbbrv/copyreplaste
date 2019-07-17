@@ -8,6 +8,10 @@
     "build": "tsc -p .",
     "lint": "eslint src/**/*.ts"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:smnbbrv/copyreplaste.git"
+  },
   "author": "smnbbrv",
   "license": "MIT",
   "devDependencies": {
