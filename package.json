@@ -1,0 +1,27 @@
+{
+  "name": "copyreplaste",
+  "description": "Add replace to your daily copy-paste jobs",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/main.ts",
+    "build": "tsc -p .",
+    "lint": "eslint src/**/*.ts"
+  },
+  "author": "smnbbrv",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^12.6.3",
+    "@typescript-eslint/eslint-plugin": "^1.12.0",
+    "@typescript-eslint/parser": "^1.12.0",
+    "eslint": "^6.0.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "bin": {
+    "copyreplaste": "./lib/main.js"
+  },
+  "dependencies": {
+    "commander": "^2.20.0"
+  }
+}
