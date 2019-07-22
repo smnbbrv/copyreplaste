@@ -1,7 +1,7 @@
 {
   "name": "copyreplaste",
   "description": "Add replace to your daily copy-paste jobs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "index.js",
   "scripts": {
     "start": "ts-node src/main.ts",
