@@ -2,6 +2,8 @@
 
 A cli tool thay makes repeatative copy-paste tasks easier.
 
+Also exists as [VS Code extension](https://marketplace.visualstudio.com/items?itemName=smnbbrv.vscode-copyreplaste) ([github project](https://github.com/smnbbrv/vscode-copyreplaste)).
+
 ## Installation
 
 Ensure you have node.js >= v10.
