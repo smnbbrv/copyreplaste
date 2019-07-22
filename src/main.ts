@@ -2,7 +2,7 @@
 
 import commander from 'commander';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
-import { join, resolve } from 'path';
+import { dirname, join, resolve } from 'path';
 import { FileSystem } from './file-system';
 import { Replacer } from './replacer';
 
@@ -57,8 +57,6 @@ function main() {
     }
   }
 
-  console.log('Copying...');
-
   worktree.forEach(f => console.log(f.original.path, '>>', f.target.path));
 
   worktree.forEach(f => {
@@ -67,11 +65,11 @@ function main() {
     } else {
       const originalContent = readFileSync(f.original.fullPath, 'utf8');
 
+      mkdirSync(dirname(f.target.fullPath), { recursive: true });
+
       writeFileSync(f.target.fullPath, replacer.replace(originalContent, replacements, replacementsOrder), 'utf8');
     }
   });
-
-  console.log('Done!');
 }
 
 main();
